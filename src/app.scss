@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  .heading {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .treeimage {
+    width: 100%;
+    border-radius: 5px;
+
+    @media (min-width: 400px) {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+    @media (min-width: 1000px) {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      height: 600px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

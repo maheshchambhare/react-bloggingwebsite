@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Treeimage from "./images/arif-nur-rokhman-IwlgBU6QCYM-unsplash.jpg";
+import "./app.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="heading">The last standing Tree...</h1>
+      <img className="treeimage" src={Treeimage} alt="Tree" />
+      <article></article>
     </div>
   );
 }
-
-export default App;
